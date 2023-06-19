@@ -1,0 +1,25 @@
+@import '../utils/mixins';
+.footer{
+    height: 75vh;
+    width: 100vw;
+    background-image: url('resources/images/gallery/room-7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    
+    &__mpage{
+        @include display_flex_row();
+        padding: 10vh 20vw;
+
+        h3{
+            color: white;
+        }
+
+        a{
+            color: rgba($color: #fff, $alpha: 0.5);
+        }
+    }
+}
+

@@ -1,0 +1,11 @@
+@import '../utils/variables';
+footer h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 21px;
+}
+
+footer a, p, span{
+    font-family: 'Hind', sans-serif;
+    color: $global-font-color;
+}

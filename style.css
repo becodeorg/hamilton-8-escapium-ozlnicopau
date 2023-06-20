@@ -151,6 +151,27 @@ footer a, p, span {
     width: 1.8em;
   }
 }
+@media only screen and (min-width: 412px) and (max-width: 768px) {
+  .footer__mpage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5vh 15vw;
+  }
+  .footer__mpage ul:nth-child(4) {
+    width: 90%;
+  }
+  .footer__mpage ul:nth-child(4) {
+    max-width: 90%;
+  }
+  .footer__mpage--logo {
+    display: flex;
+  }
+  .footer__mpage--logo i {
+    width: 1.8em;
+  }
+}
 * {
   padding: 0;
   margin: 0;

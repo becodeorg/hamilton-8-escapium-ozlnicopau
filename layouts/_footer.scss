@@ -159,3 +159,27 @@ and (max-width: 412px){
         }
     }
 }
+
+@media only screen 
+and (min-width: 412px)
+and (max-width: 768px){
+    .footer{
+        &__mpage{
+            @include display_flex_column_start;
+            padding: 5vh 15vw;
+            ul:nth-child(4){
+                width: 90%;
+                
+            }
+            ul:nth-child(4){
+                max-width: 90%;
+            }
+            &--logo{
+                display: flex;
+                i{
+                    width: 1.8em;
+                }
+            }
+        }
+    }
+}

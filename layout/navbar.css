@@ -6,10 +6,11 @@
 
 header {
   font-family: "Hind", "sans-serif";
+  font-size: 16px;
   color: #777;
   height: 100vh;
   background-size: cover;
-  padding-top: 20px;
+  position: relative;
 }
 
 nav {
@@ -17,19 +18,96 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-color: #222222;
+}
+nav div {
+  display: flex;
+  align-items: center;
 }
 nav ul {
-  width: 500px;
+  width: 50px;
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding-left: 50px;
+}
+nav ul li {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+nav ul li .oblique-line::before {
+  width: 50px;
+  height: 2px;
+  background-color: #f60b0e;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 0;
+  content: " ";
+  display: none;
+}
+nav ul li .oblique-line::before:hover {
+  display: block;
 }
 nav ul li a {
   cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 nav ul li a i {
   margin-left: 5px;
 }
 nav ul li a:hover {
   color: white;
+}
+
+.button_booknow {
+  margin-right: 50px;
+  margin-left: auto;
+  border: 2px #777 solid;
+  background: none;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fefefe;
+}
+.button_booknow:hover {
+  cursor: pointer;
+  background-color: #777;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #222222;
+    color: white;
+    font-size: 14px;
+  }
+  nav div {
+    flex-direction: column;
+    padding: 20px;
+  }
+  nav div ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav div ul li {
+    border-bottom: 1px solid #777;
+    border-top: 1px solid #777;
+  }
+  .button_booknow {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.css.map */

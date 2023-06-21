@@ -1,4 +1,154 @@
 @import url(/layouts/navbar.css);
 header {
-  background-image: url();
+  background-image: url(../ressources/gallery/slide-1.jpg);
+  height: 50vh;
+  filter: contrast(125%);
+}
+header h1 {
+  text-align: center;
+  font-size: 120px;
+}
+header h1 .about_h1_title {
+  color: white;
+}
+header h1 .about_h1_point {
+  color: red;
+}
+
+h2 {
+  font-size: 44px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Montserrat", "sans serif";
+}
+
+.howtoplay {
+  background-color: #222222;
+  font-family: "Montserrat", "sans serif";
+}
+.howtoplay .howtoplay_flexbox {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.howtoplay .howtoplay_flexbox .howtoplay_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 320px;
+  justify-content: space-between;
+}
+.howtoplay .howtoplay_flexbox .howtoplay_container .howtoplay_icon {
+  width: 55px;
+  border: 1px solid #717171;
+  border-radius: 100px;
+  padding: 30px;
+}
+.howtoplay h3 {
+  font-size: 32px;
+  color: white;
+}
+.howtoplay p {
+  font-size: 16px;
+  color: #717171;
+  text-align: center;
+}
+
+.certificates {
+  background-color: #1b1b1b;
+}
+.certificates .certificates_flexbox {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.ourteam {
+  background-color: #222222;
+}
+.ourteam .ourteam_container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+.ourteam .ourteam_container .ourteam_flexbox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+}
+.ourteam .ourteam_container .ourteam_flexbox .ourteam_img {
+  width: 300px;
+  filter: brightness(50%);
+}
+.ourteam .ourteam_container .ourteam_flexbox .ourteam_member_name {
+  font-size: 16px;
+  color: white;
+  font-family: "Montserrat", "sans serif";
+}
+.ourteam .ourteam_container .ourteam_flexbox .ourteam_job_title {
+  font-size: 11px;
+  color: #717171;
+  font-family: "Montserrat", "sans serif";
+}
+
+.what_people_say {
+  background-color: #1b1b1b;
+  font-family: "Montserrat", "sans serif";
+}
+.what_people_say .read_testimonials {
+  color: #f60b0e;
+  text-decoration: underline;
+  text-align: center;
+}
+.what_people_say .testimonials_flexbox {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 250px;
+  padding-right: 250px;
+  justify-content: space-between;
+}
+.what_people_say .testimonials_flexbox .testimonials_containers {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_text {
+  text-align: center;
+}
+.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_avatar {
+  width: 50px;
+}
+.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_name {
+  font-size: 11px;
+}
+.what_people_say .testimonials_flexbox p {
+  color: #717171;
+}
+
+.faq .h2_faq {
+  color: black;
+}
+.faq .p {
+  font-size: 11px;
+  color: #717171;
+}
+.faq .ul {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=about.css.map */

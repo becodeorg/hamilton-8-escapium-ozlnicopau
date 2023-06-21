@@ -1,5 +1,9 @@
 @import 'layouts/footer';
-@import 'layouts/form';
 @import 'pages/contact.scss';
+@import 'pages/room.scss'; // different de rooms, ici, c la page de la présentation de la room seule
 @import 'pages/rooms.scss';
-@import 'pages/room.scss' // attention: c le fichier de la page room seule 
+@import 'layouts/form';
+@import 'utils/fonctions';
+@import 'utils/mixins';
+@import 'utils/variables';
+@import './base/reset';

@@ -1,0 +1,323 @@
+@import '../utils/variables';
+
+
+
+
+/* main{
+    .sectionOne {
+        background-color: $darkest-background;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        font-family: 'Hind Siliguri', sans-serif;
+
+        &__title {
+            color: white;
+            font-size: $mobile-h1;
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px;
+        }
+        &__para {
+            color: $global-font-color;
+            
+            padding: 20px;
+            font-size: $mobile-p;
+
+        }
+        &__ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            width: 100%;
+            color: $global-font-color;
+            font-size: $mobile-p;
+            padding: 10px;
+            &__mail__para{
+                color: white;
+            }
+            i{
+                font-size: 30px;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 4em;
+            }
+
+        }
+        
+    }
+
+    .sectionTwo {
+        background-color: $darkest-background;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 10px;
+        font-family: 'Hind Siliguri', sans-serif;
+     
+        &__title {
+            color:white;
+            font-size: $mobile-h1;
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px;
+   
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            margin: 20px;
+            
+            &__input1 {
+                border: none;
+                background-color: $darkest-background;
+                height: 25px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            &__input2 {
+                border: none;
+                Background-color: $darkest-background;
+                height: 25px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            &__textarea {
+                border: none;
+                background-color: $darkest-background;
+                height: 150px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+        }
+       
+        &__button {
+            max-width: 95%;
+            align-items: center;
+            color: white;
+            background-color: $red;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            padding: 20px 60px;
+            margin: 30px;
+        }
+
+    }
+
+    .sectionThree {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        width: 100%;
+        filter: grayscale(100%) invert(3);
+    }
+} */
+
+
+
+
+// @import '../utils/variables';
+
+
+
+
+main{
+    background-color: $darkest-background;
+    .articleOne {
+        background-color: $darkest-background;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        font-family: 'Hind Siliguri', sans-serif;
+
+        &__title {
+            color: white;
+            font-size: $mobile-h1;
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px;
+        }
+        &__para {
+            color: $global-font-color;
+            
+            padding: 20px;
+            font-size: $mobile-p;
+
+        }
+        &__ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            width: 100%;
+            color: $global-font-color;
+            font-size: $mobile-p;
+            padding: 10px;
+            &__mail__para{
+                color: white;
+            }
+            i{
+                font-size: 30px;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 4em;
+            }
+
+        }
+        
+    }
+
+    .articleTwo {
+        background-color: $darkest-background;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 10px;
+        font-family: 'Hind Siliguri', sans-serif;
+     
+        &__title {
+            color:white;
+            font-size: $mobile-h1;
+            font-family: 'Montserrat', sans-serif;
+            padding: 10px;
+   
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            margin: 20px;
+            
+           
+            
+            &__input1 {
+                border: none;
+                border-color: transparent;
+                background-color: $darkest-background;
+                height: 25px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                outline: none;
+                color: white;
+            }
+            /* &__input1:hover{
+                border-bottom: 1px solid white;
+            } */
+            &__input2 {
+                border: none;
+                Background-color: $darkest-background;
+                height: 25px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                outline: none;
+                color: white;
+            }
+            &__textarea {
+                border: none;
+                background-color: $darkest-background;
+                height: 150px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                outline: none;
+                color: white;
+
+            }
+        }
+       
+        &__button {
+            max-width: 95%;
+            align-items: center;
+            color: white;
+            background-color: $red;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            padding: 20px 60px;
+            margin: 30px;
+        }
+
+    }
+
+    .articleThree {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        width: 100%;
+        filter: grayscale(100%) invert(3);
+    }
+}
+
+
+
+
+
+
+// tablette
+@media  only screen and (min-width: 768px) and (max-width: 1000px) {
+   main {
+        .mediaquery{
+            display: flex;
+            flex-direction: row;
+        }
+        .artcileOne {
+            width: 30%;
+        }   
+    }
+    .sectionPrincipale {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+       font-size:  120px;
+    }
+    p {
+        font-size: 16px;;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width:1920px) {
+    main {
+        .sectionPrincipale {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .mediaquery {
+            display: flex;
+            flex-direction: row;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .articleTwo {
+            width:100%;
+        }
+
+    }
+}
+

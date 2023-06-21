@@ -151,4 +151,8 @@ h2 {
 .faq .ul {
   display: flex;
   flex-direction: column;
+}
+.faq .ul .li {
+  font-size: 14px;
+  font-weight: bolder;
 }/*# sourceMappingURL=about.css.map */

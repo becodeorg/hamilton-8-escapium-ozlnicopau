@@ -256,4 +256,16 @@ h2 {
 
 .faq .h2_faq {
   color: black;
+}
+.faq .p {
+  font-size: 11px;
+  color: #717171;
+}
+.faq .ul {
+  display: flex;
+  flex-direction: column;
+}
+.faq .ul .li {
+  font-size: 14px;
+  font-weight: bolder;
 }/*# sourceMappingURL=style.css.map */

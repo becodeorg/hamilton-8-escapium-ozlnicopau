@@ -175,5 +175,10 @@ h2 {
   .ul {
     display: flex;
     flex-direction: column;
+
+    .li {
+      font-size: 14px;
+      font-weight: bolder;
+    }
   }
 }

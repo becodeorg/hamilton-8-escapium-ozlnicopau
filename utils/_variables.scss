@@ -1,39 +1,27 @@
-//  Color of the text
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap%27');
+$darkest_background: #1B1B1B ;
+$darkest_background2: #1b1b1b91 ;
+$dark_background: #222222 ;
+$white_background: #fefefe ;
+$white_font: #fefefe ;
+$nav_font_color: #777 ;
+$global_font_color: #717171;
+// Font :
+$headings : 'Montserrat', sans-serif;
+$paragraphs :  'Hind', sans-serif;
+// Taille title and paragraphe Desktop:
+$h1Desktop : 120px ;
+$h2Dekstop : 44px ;
+$h3Desktop : 32px ;
+$pDesktop : 16px;
+$smallerTextMobile : 11px;
+// Taille title and paragraphe Desktop:
+$h1Mobile : 32px ;
+$h2Mobile : 19px ;
+$h3Mobile : 21px ;
+$pMobile : 14px;
+$smallerTextMobile2 : 10px;
+//Red color ? 
 $red: #F60B0E;
-$darkest-background: #1B1B1B;
-$dark-background: #222222;
-$white-background: #fefefe;
-$global-font-color: #717171;
-$nav-font-color: #777;
 
-
-
-// font size
-
-$big-screens-h1: 120px;
-$big-screens-h2: 44px;
-$big-screens-h3: 32px;
-$big-screens-p: 16px;
-$big-creens-smaller-text : 11px;
-
-$mobile-h1: 32px;
-$mobile-h2: 19px;
-$mobile-h3: 21px;
-$mobile-p: 14px;
-$mobile-smaller-text: 10px;
-
-
-// header
-
-$color-red:#F60B0E;
-
-$color-darkest-background: #1B1B1B;
-
-$color-dark-background: #222222;
-
-$color-white-background: #fefefe;
-
-$color-global-font: #717171;
-$color-nav-font: #777;

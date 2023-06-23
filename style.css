@@ -1,6 +1,6 @@
 footer h3 {
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #ffffff;
   font-size: 21px;
 }
 
@@ -12,13 +12,31 @@ footer a, p, span {
 .s1 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 7vw;
-  color: white;
+  color: #ffffff;
 }
 .s1 p {
   font-family: "Hind", sans-serif;
-  color: white;
-  font-size: 1vw;
+  color: #ffffff;
+  font-size: 1em;
   opacity: 65%;
+}
+
+.s2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+}
+.s2 h3 {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif;
+}
+.s2 p {
+  font-family: "Hind", sans-serif;
+  font-size: 1.2em;
+}
+.s2 .under_title p {
+  font-size: 0.9em;
+  font-weight: 900;
 }
 
 .footer {
@@ -71,7 +89,7 @@ footer a, p, span {
   width: 2em;
   height: 2px;
   border-radius: 5px;
-  background: rgba(246, 11, 14, 0.3);
+  background: rgba(190, 0, 3, 0.3);
 }
 .footer__mpage--logo {
   display: flex;
@@ -231,7 +249,7 @@ footer a {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 13px;
+  top: 30px;
 }
 .s1__div2 ul {
   display: flex;
@@ -254,11 +272,65 @@ footer a {
 .s2 {
   min-height: 210vh;
   background-color: #1B1B1B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+}
+.s2 h2 {
+  color: #ffffff;
+}
+.s2__article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.s2__article--div {
+  width: 28em;
+  height: 34em;
+  background-color: #222222;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+  padding: 5em 3em;
+}
+.s2__article--div div {
+  color: #717171;
+}
+.s2__article--div .under_title {
+  display: flex;
+  gap: 1em;
+}
+.s2__article--div .under_title i {
+  padding-right: 0.5em;
+}
+.s2__article--div h3 {
+  padding: 1em 0 0.2em 0;
+}
+.s2__article--div p {
+  padding: 1em 0 2em 0;
+  line-height: 1.5em;
+}
+.s2__article--div button {
+  color: #ffffff;
+  padding: 1em 3em;
+  border-radius: 50px;
+  background-color: #be0003;
+  border: none;
+}
+.s2__article figure {
+  width: 38em;
+  height: 25em;
+}
+.s2__article figure img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
 }
 
 .active {
   width: 50px !important;
-  background-color: white !important;
+  background-color: #ffffff !important;
 }
 
 /*# sourceMappingURL=style.css.map */

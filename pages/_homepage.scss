@@ -21,7 +21,7 @@
         width: 4.5vw;
         height: 2px;
         border-radius: 5px;
-        background: rgba(white, $alpha: 1);
+        background: rgba($whitefont, $alpha: 1);
         position: relative;
         bottom: 4px;
         padding-right: 1em;
@@ -35,7 +35,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 13px;
+        top: 30px;
 
         ul{
             display: flex;
@@ -62,9 +62,68 @@
 .s2{
     min-height: 210vh;
     background-color: $darkest-background;
+    @include display_flex_column;
+    gap: 10em;
+
+    & h2{
+        color: $whitefont;
+    }
+
+    &__article{
+        @include display_flex_rox;
+        
+        &--div{
+            width: 28em;
+            height: 34em;
+            background-color: $dark-background;
+            box-shadow: 0 0 35px rgba($color: #000000fa, $alpha: 0.8);
+            padding: 5em 3em;
+
+            div{
+                color: $global-font-color;
+            }
+
+            .under_title{
+                display: flex;
+                gap: 1em;
+
+                i{
+                    padding-right: 0.5em;
+                }
+            }
+            
+            h3{
+                padding: 1em 0 0.2em 0;
+            }
+
+            p{
+                padding: 1em 0 2em 0;
+                line-height: 1.5em;
+            }
+
+            button{
+                color: $whitefont;
+                padding: 1em 3em;
+                border-radius: 50px;
+                background-color: $red;
+                border: none;
+            }
+        }
+
+        & figure{
+            width: 38em;
+            height: 25em;
+
+           & img{
+            height: 100%;
+            width: 100%;
+            background-position: center;
+           }
+        }
+    }  
 }
 
 .active{
     width: 50px !important;
-    background-color: white !important;
+    background-color: $whitefont !important;
 }

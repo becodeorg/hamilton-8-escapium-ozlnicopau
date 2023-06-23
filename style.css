@@ -9,6 +9,18 @@ footer a, p, span {
   color: #717171;
 }
 
+.s1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7vw;
+  color: white;
+}
+.s1 p {
+  font-family: "Hind", sans-serif;
+  color: white;
+  font-size: 1vw;
+  opacity: 65%;
+}
+
 .footer {
   min-height: 75vh;
   width: 100vw;
@@ -181,6 +193,72 @@ footer a, p, span {
 
 footer a {
   text-decoration: none;
+}
+
+.s1 {
+  width: 100%;
+  height: 100vh;
+  background: rgba(27, 27, 27, 0);
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgb(27, 27, 27) 90%, rgb(27, 27, 27) 100%), url("/resources/images/gallery/slide-4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s1 p {
+  letter-spacing: 4px;
+  padding-top: 3vh;
+}
+.s1 p::before {
+  content: "";
+  display: inline-block;
+  width: 4.5vw;
+  height: 2px;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+  bottom: 4px;
+  padding-right: 1em;
+  margin-right: 1vw;
+  opacity: 50%;
+}
+.s1__div2 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 13px;
+}
+.s1__div2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.s1__div2 li {
+  width: 30px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  margin: 9px;
+  border-radius: 25px;
+}
+.s1__div1 {
+  padding-left: 7vw;
+  padding-bottom: 3em;
+}
+
+.s2 {
+  min-height: 210vh;
+  background-color: #1B1B1B;
+}
+
+.active {
+  width: 50px !important;
+  background-color: white !important;
 }
 
 /*# sourceMappingURL=style.css.map */

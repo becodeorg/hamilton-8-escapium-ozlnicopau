@@ -17,10 +17,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 </head>
 
+
+
 <body>
+    <header id="header"></header>
     <main>
         <section class="principale_section">
         <div class="mediaquery">
@@ -59,45 +63,16 @@
             </article>
         </section>
     </main>
+
+<footer id="footer"></footer>
+<script>
+$(function() {
+  $("#header").load("../utils/_header.html")
+  $("#footer").load("../utils/_footer.html")
+})
+</script>
 </body>
 </html>
 
-
-<!-- <body>
-    <main>
-        <section class="sectionOne">
-            <h2 class="sectionOne__title">Get In touch</h2>
-            <p class="sectionOne__para">If you are intersted in working with us, please get in touch</p>
-
-                <ul class="sectionOne__ul">
-                    <li class="sectionOne__icone__adress">
-                        <i class="fa-regular fa-map fa-flip-vertical" style="color: #fff;"></i>
-                        <p>2390 RoadHill St., Suite 100 <br> Downtown, NY 82153</p>
-                    </li>
-                    <li class="sectionOne__icone__phone">
-                        <i class=" fa-solid fa-phone" style="color: #ffff;"></i>
-                        <p>+1800 900 1248</p>
-                    </li>
-                    <li class="sectionOne__icone__mail">
-                        <i class=" fa-regular fa-envelope" style="color: #ffff;"></i>
-                        <p class="sectionOne__icone__mail__para">info@escapium.com</p>
-                    </li>
-                </ul>
-        </section>
-
-        <section class="sectionTwo">
-            <h2 class="sectionTwo__title">Contact form</h2>
-            <form class="sectionTwo__form" action="page-traitement-donnees" method="post">
-                <input class="sectionTwo__form__input1" type="text" id="nom" name="nom" placeholder="Name">
-                <input class="sectionTwo__form__input2" type="email" id="email" name="email" placeholder="Email Address">
-                <textarea class="sectionTwo__form__textarea" id="message" name="message" placeholder="Your message ..."></textarea>
-            </form>
-            <button class="sectionTwo__button" type="submit">Send Message</button>
-        </section>
-        <section class="sectionThree">
-            <iframe class="sectionTwo__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4634.916737065882!2d-73.95587007511118!3d40.79989957231394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f60c3ca5ae1d%3A0xb4255a4c34b11c95!2sMarcus%20Garvey%20Park!5e0!3m2!1sfr!2sbe!4v1687183847852!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-</body> -->
 
 

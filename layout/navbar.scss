@@ -30,7 +30,13 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: $color-dark-background;
+  background-color: $color-darkest-background;
+
+  #mySidenav {
+    .close {
+      display: none;
+    }
+  }
 
   div {
     display: flex;
@@ -106,33 +112,83 @@ nav {
 }
 
 @media (max-width: 768px) {
+  //Styles pour le burger menu
+
   nav {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: $color-dark-background;
-    color: white;
-    font-size: 14px;
+    display: none;
 
-    div {
+    .sidebar {
       flex-direction: column;
-      padding: 20px;
+      width: 200px;
+      height: 100%;
+      background-color: #222222;
+      transition: transform left 0.3s ease;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      padding-top: 100px;
+      color: white;
+      font-size: 14px;
+      left: -250px;
 
-      ul {
-        flex-direction: column;
-        padding: 0;
+      .close {
+        display: block;
+        position: absolute;
+        top: 0;
+        color: #717171;
+        text-align: right;
+        left: 90%;
+        text-decoration: none;
+        font-size: 25px;
+      }
 
-        li {
-          border-bottom: 1px solid #777;
-          border-top: 1px solid #777;
-        }
+      .active {
+        left: 200px; /* Afficher la sidebar */
       }
     }
   }
-  .button_booknow {
-    display: none;
+
+  div {
+    flex-direction: column;
+    padding: 20px;
+
+    ul {
+      flex-direction: column;
+      padding: 0;
+
+      li {
+        border-bottom: 1px solid #777;
+        border-top: 1px solid #777;
+      }
+    }
+  }
+}
+.button_booknow {
+  display: none;
+}
+
+#openBtn {
+  display: block;
+  z-index: 1;
+  color: #f60b0e;
+
+  .burger-icon {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+
+    span {
+      display: block;
+      width: 35px;
+      height: 1px;
+      background-color: green;
+      margin-bottom: 5px;
+    }
   }
 }

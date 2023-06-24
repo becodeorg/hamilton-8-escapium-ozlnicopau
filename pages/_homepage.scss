@@ -63,14 +63,33 @@
     min-height: 210vh;
     background-color: $darkest-background;
     @include display_flex_column;
-    gap: 10em;
+    gap: 8em;
+
+    &__buttonendpage{
+        padding: 1em 2.5em;
+        border: 2px solid $global-font-color;
+        color: $whitefont;
+        border-radius: 50px;
+        margin-bottom: 5em;
+    }
+
+    .line{
+        display: block;
+        background-color: $whitefont;
+        width: 40px;
+        height: 3px;
+        opacity: 25%;
+        border-radius: 35px;
+        position: relative;
+        top: 2em;
+    }
 
     & h2{
         color: $whitefont;
     }
 
     &__article{
-        @include display_flex_rox;
+        @include display_flex_row;
         
         &--div{
             width: 28em;
@@ -86,6 +105,7 @@
             .under_title{
                 display: flex;
                 gap: 1em;
+                padding-top: 0.5em;
 
                 i{
                     padding-right: 0.5em;
@@ -97,7 +117,7 @@
             }
 
             p{
-                padding: 1em 0 2em 0;
+                padding: 0.5em 0 2.3em 0;
                 line-height: 1.5em;
             }
 
@@ -127,3 +147,68 @@
     width: 50px !important;
     background-color: $whitefont !important;
 }
+
+.s3{
+    @include display_flex_column;
+    min-height: 90vh;
+    background-color: $dark-background;
+    padding: 0 15vw 10vh;
+
+    .line{
+        display: block;
+        background-color: $whitefont;
+        width: 40px;
+        height: 3px;
+        opacity: 25%;
+        border-radius: 35px;
+        position: relative;
+        top: 3em;
+    }
+
+    h2{
+        color: $whitefont;
+        padding: 2em 0 1.5em 0;
+    }
+
+    h3{
+        padding: 1.5em 0 1em 0;
+    }
+
+    &__div{
+        @include display_flex_row;
+        gap: 6em;
+
+
+        article{
+            @include display_flex_column;
+            min-width: 24em;
+
+            p{
+                text-align: center;
+            }
+            .intline{
+                display: block;
+                background-color: rgba($color: #ffffff, $alpha: 0.1);
+                width: 15em;
+                height: 2px;
+                rotate: 120deg;
+                z-index: 0;
+                position: relative;
+                bottom: 5em;
+            }
+            i{
+                @include display_flex_row;
+                width: 2em;
+                aspect-ratio: 1 / 1;
+                background-color: $dark-background;
+                font-size: 5em;
+                border: 2px solid rgba($color: #ffffff, $alpha: 0.1);
+                border-radius: 100px;
+                color: rgba($color: #fff, $alpha: 1);
+                z-index: 100;
+                position: relative;
+            }
+        }
+    }
+}
+

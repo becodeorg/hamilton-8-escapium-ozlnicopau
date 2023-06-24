@@ -20,11 +20,19 @@ footer a, p, span{
         font-family: 'Hind', sans-serif;
         color: $whitefont;
         font-size: 1em;
-        opacity: 65%;
+        font-weight: 600;
+        opacity: 55%;
     }
 }
 
 .s2{
+    
+    &__buttonendpage{
+        font-family: 'Hind', sans-serif;
+        font-weight: 800;
+        font-size: 1.1em;
+    }
+    
     h2{
         font-family: 'Montserrat', sans-serif;
         font-size: 3.5em;
@@ -35,6 +43,11 @@ footer a, p, span{
         font-family: 'Montserrat', sans-serif;
     }
 
+    div{
+        button{
+            font-weight: 900;
+        }
+    }
     p{
         font-family: 'Hind', sans-serif;
         font-size: 1.2em;
@@ -45,5 +58,21 @@ footer a, p, span{
         font-size: 0.9em;
         font-weight: 900;
         }
+    }
+}
+
+.s3{
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5em;
+    }
+    h3{
+        color: $whitefont;
+        font-size: 2em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    p{
+        font-family: 'Hind', sans-serif;
+        font-size: 1.2em;
     }
 }

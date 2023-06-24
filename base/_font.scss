@@ -76,3 +76,28 @@ footer a, p, span{
         font-size: 1.2em;
     }
 }
+
+.s4{
+    h2{
+        font-size: 3.5em;
+        font-family: 'Montserrat', sans-serif;
+        color: $dark-background;
+    }
+    p{
+        font-family: 'Hind', sans-serif;
+        font-size: 1.2em;
+    }
+    h5{
+        font-family: 'Montserrat', sans-serif;
+        color: $global-font-color;
+        letter-spacing: 2px;
+        font-size: 0.9em;
+    }
+}
+
+.s5{
+    figcaption{
+        font-family: 'Hind', sans-serif;
+        color: $whitefont;
+    }
+}

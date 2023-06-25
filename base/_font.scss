@@ -156,3 +156,18 @@ footer a, p, span{
         font-weight: 600;
     }
 }
+
+.s9{
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5em;
+        color: $dark-background 
+    }
+    button{
+        color: $whitefont;
+        font-family: 'Hind', sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}

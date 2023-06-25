@@ -494,7 +494,7 @@
         background-color: $dark-background;
         display: flex;
         flex-direction: column;
-        padding: 2em 10em 2em 2em;
+        padding: 2em 15vw 2em 2em;
         width: 50vw;
         gap: 1em;
         max-height: 70vh;
@@ -571,7 +571,6 @@
             font-weight: 700;
             font-size: 1em;
         }
-
     }
     .articleThree {
         height: 70vh;
@@ -583,5 +582,28 @@
         width: 50vw;
         height: 70vh;
         filter: grayscale(100%) invert(3);
+    }
+}
+.s9{
+    min-height: 50vh;
+    @include display_flex_column;
+    gap: 2em;
+    
+    .line{
+        display: block;
+        background-color: $darkest-background;
+        width: 40px;
+        height: 4px;
+        opacity: 55%;
+        border-radius: 35px;
+        position: relative;
+        
+    }
+
+    button{
+        background-color: $red;
+        padding: 15px 45px;
+        border: none;
+        border-radius: 50px;
     }
 }

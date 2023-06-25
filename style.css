@@ -134,6 +134,19 @@ footer a, p, span {
   font-weight: 600;
 }
 
+.s9 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  color: #222222;
+}
+.s9 button {
+  color: #ffffff;
+  font-family: "Hind", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 .footer {
   min-height: 75vh;
   width: 100vw;
@@ -789,7 +802,7 @@ footer a {
   background-color: #222222;
   display: flex;
   flex-direction: column;
-  padding: 2em 10em 2em 2em;
+  padding: 2em 15vw 2em 2em;
   width: 50vw;
   gap: 1em;
   max-height: 70vh;
@@ -869,6 +882,30 @@ footer a {
   width: 50vw;
   height: 70vh;
   filter: grayscale(100%) invert(3);
+}
+
+.s9 {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.s9 .line {
+  display: block;
+  background-color: #1B1B1B;
+  width: 40px;
+  height: 4px;
+  opacity: 55%;
+  border-radius: 35px;
+  position: relative;
+}
+.s9 button {
+  background-color: #F60B0E;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

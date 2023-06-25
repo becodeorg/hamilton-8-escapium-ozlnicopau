@@ -2,6 +2,7 @@
 
 header {
   background-image: url(../ressources/gallery/slide-1.jpg);
+  background-size: cover;
   height: 50vh;
   filter: contrast(125%);
 
@@ -74,6 +75,7 @@ h2 {
 
   .certificates_flexbox {
     display: flex;
+    flex-direction: row;
     padding-left: 50px;
     padding-right: 50px;
     justify-content: space-between;
@@ -160,25 +162,253 @@ h2 {
       color: #717171;
     }
   }
+
+  .testimonials_navigation {
+    display: flex;
+    height: 150px;
+
+    img {
+      color: red;
+      height: 50px;
+      width: 50px;
+    }
+
+    .testimonials_oblique {
+      height: 2px;
+      background-color: #717171;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 0;
+      content: " ";
+    }
+  }
 }
 
 .faq {
+  padding-bottom: 100px;
   .h2_faq {
     color: black;
+    padding-bottom: 20px;
   }
 
-  .p {
+  .faq_if {
     font-size: 11px;
     color: #717171;
+    text-align: center;
   }
 
-  .ul {
-    display: flex;
-    flex-direction: column;
+  div {
+    width: auto;
+    margin: auto;
 
-    .li {
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+
+      p {
+        margin-left: 90px;
+        color: #717171;
+        font-family: "Hind";
+      }
+    }
+  }
+
+  .accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: white;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 20px;
+
+    &::before {
+      content: "\02795"; /* Unicode character for "plus" sign (+) */
+      font-size: 13px;
+      padding: 10px;
+      color: #777;
+      float: left;
+      margin-left: 5px;
+      background-color: #eee;
+      border: 1px solid #eee;
+      border-radius: 50px;
+      margin-right: 50px;
+    }
+
+    .active::before {
+      content: "\2212";
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .navbar {
+    display: none;
+  }
+
+  header {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  .howtoplay {
+    .howtoplay_flexbox {
+      padding-left: 20px;
+      padding-right: 20px;
+      flex-direction: column;
+
+      .howtoplay_container {
+        width: 200px;
+        height: 250px;
+
+        .howtoplay_icon {
+          width: 35px;
+          padding: 20px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 19px;
+    }
+
+    p {
       font-size: 14px;
-      font-weight: bolder;
+    }
+  }
+
+  .ourteam {
+    .ourteam_container {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .ourteam_flexbox {
+        .ourteam_img {
+          width: 200px;
+        }
+
+        .ourteam_member_name {
+          font-size: 12px;
+        }
+
+        .ourteam_job_title {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  .certificates {
+    .certificates_flexbox {
+      flex-direction: column;
+
+      img {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .ourteam {
+    .ourteam_container {
+      flex-direction: column;
+    }
+    .ourteam_flexbox {
+      flex-direction: column;
+    }
+  }
+
+  .what_people_say {
+    .testimonials_flexbox {
+      flex-direction: column;
+      padding-left: 100px;
+
+      .testimonials_containers {
+        width: 250px;
+        .testimonials_text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .faq {
+    div {
+      .accordion {
+        font-size: 16px;
+        width: auto;
+      }
+
+      .panel {
+        width: 270px;
+        p {
+          font-size: 12px;
+          width: 270px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 412px) {
+    header {
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    h2 {
+      font-size: 21px;
+    }
+
+    .howtoplay {
+      .howtoplay_flexbox {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .howtoplay_container {
+        width: 250px;
+        height: 280px;
+
+        .howtoplay_icon {
+          width: 45px;
+          padding: 25px;
+        }
+      }
+    }
+
+    .ourteam {
+      .ourteam_container {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .ourteam_flexbox {
+          .ourteam_img {
+            width: 250px;
+          }
+        }
+      }
+    }
+
+    .what_people_say {
+      .testimonials_flexbox {
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
     }
   }
 }

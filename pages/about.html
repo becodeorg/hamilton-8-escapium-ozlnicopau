@@ -9,6 +9,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap");
     </style>
+    <script src="../pages/about.js"></script>
   </head>
 
   <header>
@@ -174,23 +175,113 @@
           <p class="testimonials_name">AARON</p>
         </div>
       </div>
+
+      <div class="testimonials_navigation">
+        <img src="../ressources/icons/arrow-left-solid.svg" />
+        <div class="testimonials_oblique"></div>
+        <img src="../ressources/icons/arrow-right-solid.svg" />
+      </div>
     </section>
 
     <section class="faq">
       <h2 class="h2_faq">FAQs</h2>
-      <p>If your questio isn't answered here, feel free to contact us.</p>
+      <p class="faq_if">
+        If your question isn't answered here, feel free to contact us.
+      </p>
 
-      <ul>
-        <li>What is an Espcape Room?</li>
-        <li>Will I be blocked in a room?</li>
-        <li>How long doaes the while experience take?</li>
-        <li>Can I play more than one game?</li>
-        <li>Will other people be in the room with us</li>
-        <li>Do I need to bring anything</li>
-        <li>Is there an age limit?</li>
-      </ul>
+      <div>
+        <button class="accordion">What is an Espcape Room?</button>
+        <div class="panel">
+          <p>
+            An escape game is a real experience where participants are locked in
+            a room and must use elements of the room, the group's collective
+            knowledge, and wits to discover clues, solve puzzles, and escape
+            and/or find the missing item within a set amount of time.
+          </p>
+        </div>
+        <button class="accordion">Will I be blocked in a room?</button>
+        <div class="panel">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem hic
+            quo architecto voluptate temporibus nihil autem veritatis. Non
+            consequatur perspiciatis itaque recusandae libero debitis, et omnis
+            quae aliquam, veritatis eius?
+          </p>
+        </div>
 
-      <footer></footer>
+        <button class="accordion">
+          How long doaes the while experience take?
+        </button>
+
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quo
+            totam quia facere, sint dolor reiciendis nemo porro magnam
+            laudantium quis atque officia voluptatum nulla accusantium libero.
+            Nisi, minus amet.
+          </p>
+        </div>
+
+        <button class="accordion">Can I play more than one game?</button>
+
+        <div class="panel">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            tempore animi autem quod dicta iusto nam quaerat expedita corrupti
+            modi saepe dolorum veniam nobis, sapiente facere iste quam?
+            Nesciunt, nulla?
+          </p>
+        </div>
+
+        <button class="accordion">
+          Will other people be in the room with us
+        </button>
+
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum
+            tempore sapiente natus omnis, ab consequuntur, earum perspiciatis id
+            esse praesentium, iure quae! Maiores odio iure veritatis dolorem
+            nulla sapiente.
+          </p>
+        </div>
+        <button class="accordion">Do I need to bring anything</button>
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem at
+            ratione obcaecati vero maiores rerum? Culpa atque officiis, qui
+            tempore architecto sed facilis quidem rerum sint amet id, officia
+            eos!
+          </p>
+        </div>
+        <button class="accordion">Is there an age limit?</button>
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem
+            in autem illo error unde ratione nostrum vitae? Dolorum laudantium
+            corrupti error, veniam quibusdam ipsum impedit numquam quaerat
+            maxime ullam.
+          </p>
+        </div>
+      </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>

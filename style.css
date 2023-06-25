@@ -770,4 +770,105 @@ footer a {
   height: 320px;
 }
 
+.s8 {
+  display: flex;
+  min-height: 70vh;
+}
+.s8 .line {
+  display: block;
+  background-color: #ffffff;
+  width: 40px;
+  height: 3px;
+  opacity: 25%;
+  border-radius: 35px;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+.s8 .articleTwo {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 10em 2em 2em;
+  width: 50vw;
+  gap: 1em;
+  max-height: 70vh;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.s8 .articleTwo__title {
+  color: white;
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 20px;
+  padding-top: 27px;
+}
+.s8 .articleTwo__form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 20px;
+  /* &__input1:hover{
+      border-bottom: 1px solid white;
+  } */
+}
+.s8 .articleTwo__form__input1 {
+  border: none;
+  border-color: transparent;
+  background-color: #222222;
+  height: 25px;
+  font-family: "Hind Siliguri", sans-serif;
+  border-bottom: 1px solid #717171;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  outline: none;
+  color: white;
+}
+.s8 .articleTwo__form__input2 {
+  border: none;
+  Background-color: #222222;
+  height: 25px;
+  font-family: "Hind Siliguri", sans-serif;
+  border-bottom: 1px solid #717171;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  outline: none;
+  color: white;
+}
+.s8 .articleTwo__form__textarea {
+  border: none;
+  background-color: #222222;
+  height: 120px;
+  font-family: "Hind Siliguri", sans-serif;
+  border-bottom: 1px solid #717171;
+  padding-top: 30px;
+  outline: none;
+  color: white;
+}
+.s8 .articleTwo__button {
+  width: 15em;
+  align-items: center;
+  color: white;
+  background-color: #222222;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 30px;
+  margin: 30px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+.s8 .articleThree {
+  height: 70vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.s8 iframe {
+  width: 50vw;
+  height: 70vh;
+  filter: grayscale(100%) invert(3);
+}
+
 /*# sourceMappingURL=style.css.map */

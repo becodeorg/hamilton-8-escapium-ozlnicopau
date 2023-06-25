@@ -473,3 +473,115 @@
         }
     }
 }
+
+.s8{
+    display: flex;
+    min-height: 70vh;
+
+    .line{
+        display: block;
+        background-color: $whitefont;
+        width: 40px;
+        height: 3px;
+        opacity: 25%;
+        border-radius: 35px;
+        position: relative;
+        left: 20px;
+        top: 10px;
+    }
+    
+    .articleTwo {
+        background-color: $dark-background;
+        display: flex;
+        flex-direction: column;
+        padding: 2em 10em 2em 2em;
+        width: 50vw;
+        gap: 1em;
+        max-height: 70vh;
+        
+        
+        font-family: 'Hind Siliguri', sans-serif;
+     
+        &__title {
+            color:white;
+            font-size: 2.5em;
+            font-family: 'Montserrat', sans-serif;
+            padding-left: 20px;
+            padding-top: 27px;
+   
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            margin: 20px;
+            
+            &__input1 {
+                border: none;
+                border-color: transparent;
+                background-color: $dark-background;
+                height: 25px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                outline: none;
+                color: white;
+            }
+            /* &__input1:hover{
+                border-bottom: 1px solid white;
+            } */
+            &__input2 {
+                border: none;
+                Background-color: $dark-background;
+                height: 25px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                outline: none;
+                color: white;
+            }
+            &__textarea {
+                border: none;
+                background-color: $dark-background;
+                height: 120px;
+                font-family: 'Hind Siliguri', sans-serif;
+                border-bottom: 1px solid $global-font-color;
+                padding-top: 30px;
+                
+                outline: none;
+                color: white;
+
+            }
+        }
+       
+        &__button {
+            width: 15em;
+            align-items: center;
+            color: white;
+            background-color: $dark-background;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid rgba($color: #ffffff33, $alpha: 0.3);
+            padding: 20px 30px;
+            margin: 30px;
+            font-family: 'Hind Siliguri', sans-serif;
+            font-weight: 700;
+            font-size: 1em;
+        }
+
+    }
+    .articleThree {
+        height: 70vh;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        width: 50vw;
+        height: 70vh;
+        filter: grayscale(100%) invert(3);
+    }
+}

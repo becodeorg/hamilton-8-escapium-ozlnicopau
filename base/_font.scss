@@ -119,5 +119,40 @@ footer a, p, span{
         font-family: 'Hind', sans-serif;
         text-underline-offset: 5px;
         letter-spacing: 1px;
+        font-weight: 600;
+    }
+}
+
+.s6{
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 7px;
+    }
+    li{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 1.1em;
+    }
+}
+
+.s7{
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5em;
+        color: $whitefont;
+    }
+    button{
+        font-family: 'Hind', sans-serif;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    a{
+        text-decoration: underline !important;
+        color: $red;
+        font-family: 'Hind', sans-serif;
+        text-underline-offset: 5px;
+        letter-spacing: 1px;
+        font-weight: 600;
     }
 }

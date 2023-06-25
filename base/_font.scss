@@ -100,4 +100,24 @@ footer a, p, span{
         font-family: 'Hind', sans-serif;
         color: $whitefont;
     }
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5em;
+        color: $whitefont;
+    }
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.7em;
+        color: $whitefont;
+    }
+    p{
+        font-size: 1.1em;
+    }
+    a{
+        text-decoration: underline !important;
+        color: $red;
+        font-family: 'Hind', sans-serif;
+        text-underline-offset: 5px;
+        letter-spacing: 1px;
+    }
 }

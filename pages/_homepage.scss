@@ -269,11 +269,55 @@
     @include display_flex_column;
     background-color: $darkest-background;
     min-height: 110vh;
-    padding: 10vh 15vh;
+    padding: 5vh 15vh 25vh;
+
+    .line{
+        display: block;
+        background-color: $whitefont;
+        width: 40px;
+        height: 3px;
+        opacity: 25%;
+        border-radius: 35px;
+        position: relative;
+        top: -2em;
+    }
+
+    a{
+        padding: 2em 0 2em 0;
+    }
     
     &__article{
         @include display_flex_row_start;
         gap: 2em;
+        padding: 2em 0 4em;
+
+        h3{
+            padding: 40px 0 30px;
+
+        }
+
+        p{
+            padding-right: 15px;
+        }
+
+        &--line{
+            display: block;
+            background-color: $whitefont;
+            width: 40px;
+            height: 3px;
+            opacity: 20%;
+            border-radius: 35px;   
+        }
+
+        &--title, h3, p{
+            padding-left: 15px;
+        }
+
+        &--title{
+            position: relative;
+            bottom: 15px;
+            opacity: 50%;
+        }
 
         &--figure1{
             width: 400px;

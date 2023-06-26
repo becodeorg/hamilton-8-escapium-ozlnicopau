@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(/layouts/navbar.css);
+@import url(/layouts/footer.css);
 header {
   background-image: url(../ressources/gallery/slide-1.jpg);
   background-size: cover;
@@ -131,13 +132,22 @@ h2 {
   align-items: center;
   height: 200px;
 }
-.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_text {
+.what_people_say
+  .testimonials_flexbox
+  .testimonials_containers
+  .testimonials_text {
   text-align: center;
 }
-.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_avatar {
+.what_people_say
+  .testimonials_flexbox
+  .testimonials_containers
+  .testimonials_avatar {
   width: 50px;
 }
-.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_name {
+.what_people_say
+  .testimonials_flexbox
+  .testimonials_containers
+  .testimonials_name {
   font-size: 11px;
 }
 .what_people_say .testimonials_flexbox p {
@@ -281,7 +291,10 @@ h2 {
   .what_people_say .testimonials_flexbox .testimonials_containers {
     width: 250px;
   }
-  .what_people_say .testimonials_flexbox .testimonials_containers .testimonials_text {
+  .what_people_say
+    .testimonials_flexbox
+    .testimonials_containers
+    .testimonials_text {
     font-size: 14px;
   }
   .faq div .accordion {
@@ -328,4 +341,4 @@ h2 {
     padding-left: 100px;
     padding-right: 100px;
   }
-}/*# sourceMappingURL=about.css.map */
+} /*# sourceMappingURL=about.css.map */

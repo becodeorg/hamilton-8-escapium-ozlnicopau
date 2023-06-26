@@ -191,3 +191,141 @@ nav {
     }
   }
 }
+@import url(../utils/_variables.sass);
+
+$color-red: #f60b0e;
+
+$color-darkest-background: #1b1b1b;
+
+$color-dark-background: #222222;
+
+$color-white-background: #fefefe;
+
+$color-global-font: #717171;
+
+$color-nav-font: #777;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  font-family: "Hind", "sans-serif";
+  font-size: 16px;
+  color: $color-nav-font;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $color-dark-background;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 50px;
+
+    li {
+      position: relative;
+      display: inline-block;
+      padding-right: 20px;
+
+      &:hover {
+        .oblique-line::before {
+          display: block;
+        }
+      }
+
+      .oblique-line::before {
+        width: 50px;
+        height: 2px;
+        background-color: $color-red;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 0;
+        content: " ";
+        display: none;
+      }
+
+      a {
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+
+        i {
+          margin-left: 5px;
+        }
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.button_booknow {
+  margin-right: 50px;
+  margin-left: auto;
+  border: 2px #777 solid;
+  background: none;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fefefe;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #777;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: $color-dark-background;
+    color: white;
+    font-size: 14px;
+
+    div {
+      flex-direction: column;
+      padding: 20px;
+
+      ul {
+        flex-direction: column;
+        padding: 0;
+
+        li {
+          border-bottom: 1px solid #777;
+          border-top: 1px solid #777;
+        }
+      }
+    }
+  }
+  .button_booknow {
+    display: none;
+  }
+}

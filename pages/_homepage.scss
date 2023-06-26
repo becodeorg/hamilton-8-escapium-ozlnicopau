@@ -1,7 +1,6 @@
 .s1 {
     width: 100%;
     height: 100vh;
-    background: rgba(27,27,27,0);
     background: linear-gradient(180deg, rgba(27,27,27,0) 0%, rgba(27,27,27,1) 90%, rgba(27,27,27,1) 100%), url('resources/images/gallery/slide-4.jpg');
     background-position: center center;
     background-size: cover;
@@ -324,7 +323,7 @@
             height: 236px;
             overflow: hidden;
             background: rgba(27,27,27,0);
-            background: linear-gradient(180deg, rgba(27,27,27,0) 0%, rgba(27,27,27,1) 99%, rgba(27,27,27,1) 100%), url(resources/images/gallery/room-9.jpg);
+            background: linear-gradient(180deg, rgba(27,27,27,0) 0%, rgba(27,27,27,1) 99%, rgba(27,27,27,1) 100%), url('resources/images/gallery/room-9.jpg');
             background-position: center center;
             background-size: 420px;
         }
@@ -333,7 +332,7 @@
             height: 236px;
             overflow: hidden;
             background: rgba(27,27,27,0);
-            background: linear-gradient(180deg, rgba(27,27,27,0) 0%, rgba(27,27,27,1) 99%, rgba(27,27,27,1) 100%), url(resources/images/gallery/post-img-2.jpg);
+            background: linear-gradient(180deg, rgba(27,27,27,0) 0%, rgba(27,27,27,1) 99%, rgba(27,27,27,1) 100%), url('resources/images/gallery/post-img-2.jpg');
             background-position: center center;
             background-size: 420px;
         }
@@ -342,7 +341,7 @@
             height: 236px;
             overflow: hidden;
             background: rgba(27,27,27,0);
-            background: linear-gradient(180deg, rgba(27,27,27,0) 0%, rgba(27,27,27,1) 99%, rgba(27,27,27,1) 100%), url(resources/images/gallery/room-7.jpg);
+            background: linear-gradient(180deg, rgba(27,27,27,0) 0%, rgba(27,27,27,1) 99%, rgba(27,27,27,1) 100%), url('resources/images/gallery/room-7.jpg');
             background-position: center center;
             background-size: 420px;
         }

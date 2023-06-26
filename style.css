@@ -1075,9 +1075,6 @@ footer a {
   .s6__article h3 {
     display: none;
   }
-  button {
-    margin-top: 50px;
-  }
   .s7 button {
     margin-bottom: 0;
   }
@@ -1100,8 +1097,15 @@ footer a {
   .s7__article figure img {
     width: 150px;
   }
+  .s8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .s8 .articleTwo {
     padding: 2em 5vw 2em 2em;
+    width: 100vw;
   }
   .s8 .articleTwo__title {
     font-size: 1.5em;
@@ -1111,6 +1115,43 @@ footer a {
     padding: 15px 10px;
     margin: 0;
     font-size: 0.8em;
+  }
+  .s8 .articleThree {
+    height: 70vh;
+    width: 100vw;
+  }
+  .s8 iframe {
+    width: 100vw;
+  }
+  .s9 {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+  }
+  .s9 h2 {
+    font-size: 1.5em;
+  }
+  .s9 .line {
+    display: block;
+    background-color: #1B1B1B;
+    width: 40px;
+    height: 4px;
+    opacity: 55%;
+    border-radius: 35px;
+    position: relative;
+  }
+  .s9 p {
+    padding-bottom: 25px;
+  }
+  .s9 button {
+    background-color: #F60B0E;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 50px;
   }
 }
 @media only screen and (min-width: 412px) and (max-width: 768px) {
@@ -1261,6 +1302,12 @@ footer a {
     padding: 15px 10px;
     margin: 0;
     font-size: 0.8em;
+  }
+  .s9 {
+    min-height: 30vh;
+  }
+  .s9 h2 {
+    font-size: 2em;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {

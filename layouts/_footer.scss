@@ -60,7 +60,7 @@
             flex-wrap: wrap;
             gap: 0.8em;
             i{
-                    @include display_flex_rox;
+                    @include display_flex_row;
                     width: 2.5em;
                     aspect-ratio: 1 / 1;
                     background-color: rgba($color: #747474, $alpha: 0.2);

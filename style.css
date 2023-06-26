@@ -966,7 +966,10 @@ footer a {
   .s2__article--div {
     width: 90vw;
     height: 40vh;
-    padding: 2em 1em;
+    padding: 2em 2em;
+  }
+  .s2__article--div p {
+    font-size: 1em;
   }
   .s3 h2 {
     font-size: 2em;
@@ -1512,6 +1515,18 @@ nav ul li a:hover {
   nav {
     display: none;
   }
+  nav div {
+    flex-direction: column;
+    padding: 20px;
+  }
+  nav div ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav div ul li {
+    border-bottom: 1px solid #777;
+    border-top: 1px solid #777;
+  }
   nav .sidebar {
     flex-direction: column;
     width: 200px;
@@ -1538,18 +1553,6 @@ nav ul li a:hover {
   }
   nav .sidebar .active {
     left: 200px; /* Afficher la sidebar */
-  }
-  div {
-    flex-direction: column;
-    padding: 20px;
-  }
-  div ul {
-    flex-direction: column;
-    padding: 0;
-  }
-  div ul li {
-    border-bottom: 1px solid #777;
-    border-top: 1px solid #777;
   }
 }
 .button_booknow {

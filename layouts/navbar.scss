@@ -72,7 +72,10 @@ nav {
         content: " ";
         display: none;
       }
-
+      a{
+        text-decoration: none;
+        color: #777;
+      }
       a {
         cursor: pointer;
         font-weight: bold;

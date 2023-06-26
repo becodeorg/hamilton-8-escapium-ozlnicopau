@@ -11,7 +11,7 @@ header {
     ),
     url(../ressources/gallery/slide-1.jpg);
   background-size: contain;
-  height: 50vh;
+  
   filter: contrast(125%);
 
   h1 {
@@ -246,7 +246,19 @@ h2 {
       font-size: 13px;
       padding: 10px;
       color: #777;
-      float: left;
+      float: left;header {
+        background: rgba(27, 27, 27, 0);
+        background: linear-gradient(
+            180deg,
+            rgba(27, 27, 27, 0) 0%,
+            rgba(27, 27, 27, 1) 90%,
+            rgba(27, 27, 27, 1) 100%
+          ),
+          url(../ressources/gallery/slide-1.jpg);
+        background-size: contain;
+        height: 50vh;
+        filter: contrast(125%);
+      
       margin-left: 5px;
       background-color: #eee;
       border: 1px solid #eee;
@@ -428,4 +440,5 @@ h2 {
       width: 500px;
     }
   }
+}
 }

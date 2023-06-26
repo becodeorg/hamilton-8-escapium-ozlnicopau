@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-@mixin display_flex_rox{
+@mixin display_flex_row{
     display: flex;
     flex-direction: row;
     align-items: center;

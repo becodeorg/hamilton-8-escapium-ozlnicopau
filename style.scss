@@ -1,4 +1,16 @@
 
+
+@import 'utils/variables';
 @import 'utils/mixins';
-@import './utils/variables';
-@import './utils/mixins';
+
+
+@import './sass/blogs.scss';
+@import './base/reset';
+@import './base/font';
+@import './layout/navbar';
+
+@import './layout/footer';
+
+
+
+

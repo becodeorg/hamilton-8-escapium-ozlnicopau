@@ -130,7 +130,6 @@ nav {
           }
         }
       }
-
     .sidebar {
       flex-direction: column;
       width: 200px;
@@ -158,6 +157,21 @@ nav {
 
       .active {
         left: 200px; /* Afficher la sidebar */
+      }
+    }
+  }
+
+  div {
+    flex-direction: column;
+    padding: 20px;
+
+    ul {
+      flex-direction: column;
+      padding: 0;
+
+      li {
+        border-bottom: 1px solid #777;
+        border-top: 1px solid #777;
       }
     }
   }

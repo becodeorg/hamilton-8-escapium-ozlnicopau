@@ -655,7 +655,10 @@ and (max-width: 412px){
             &__article--div{
                 width: 90vw;
                 height: 40vh;
-                padding: 2em 1em;
+                padding: 2em 2em;
+                 p{
+                    font-size: 1em;
+                 }
             }
         }
         .s3{

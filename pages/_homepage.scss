@@ -802,7 +802,7 @@ and (max-width: 412px){
     .s8{
         @include display_flex_column;
         .articleTwo {
-            padding: 2em 5vw 2em 2em;
+            padding: 2em 8vw 2em 2em;
             width: 100vw;
             &__title{
                 font-size: 1.5em;

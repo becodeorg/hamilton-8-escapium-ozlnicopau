@@ -1,0 +1,185 @@
+@import '../utils/mixins';
+@import '../base/font';
+@import '../utils/variables';
+.footer{
+    min-height: 75vh;
+    width: 100vw;
+    background-image: url('resources/images/gallery/room-7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: multiply;
+    
+    &__mpage{
+        @include display_flex_row_start();
+        padding: 15vh 15vw;
+        border-bottom: 2px solid rgba($color: #fff, $alpha: 0.1);
+        gap: 10%;
+        background-color: rgba($color: #424242, $alpha: 0.3);
+
+        ul:nth-child(3){
+            display: flex;
+            flex-direction: column;
+            min-width: 20%;
+            
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+            }
+        }
+
+        &--bold{
+            color: white;
+        }
+
+        &--number{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 1em;
+                color: $global-font-color;
+                position: relative;
+                right: 30px;
+                bottom: 13px;
+                
+                &::after{
+                    content: "";
+                    width: 2em;
+                    height: 2px;
+                    border-radius: 5px;
+                    background: rgba($red, $alpha: 0.3);
+                }
+        }
+
+        &--logo{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8em;
+            i{
+                    @include display_flex_row;
+                    width: 2.5em;
+                    aspect-ratio: 1 / 1;
+                    background-color: rgba($color: #747474, $alpha: 0.2);
+                    border-radius: 100px;
+                    color: rgba($color: #fff, $alpha: 1);
+            }
+        }
+
+        ul{
+            align-items: flex-start;
+        }
+
+        ul:nth-child(2){
+            a{
+                letter-spacing: 0.1em;
+            }
+        }
+
+        ul:nth-child(4){
+            max-width: 20%;
+            li{
+                padding: 0;
+            }
+            h3{
+                padding-bottom: 1.2em;
+            }
+        }
+
+        h3{
+            padding-bottom: 0.5em; 
+        }
+
+        a{
+            color: rgba($color: #fff, $alpha: 0.5);
+        }
+
+        li {
+            padding-bottom: 1.1em
+        }
+    }
+    &__bpage{
+        @include display_flex_column();
+        padding: 2.5em;
+    }
+    img{
+        padding-bottom: 1em;
+    }
+}
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1200px){
+    .footer{
+        &__mpage{
+            padding: 10vh 5vw;
+            gap: 8%;
+            ul:nth-child(1){
+                h3{
+                    width: 70%;
+                }
+            }
+            ul:nth-child(4){
+                h3{
+                    width: 70%;
+                }
+            }
+            ul:nth-child(3){
+                min-width: 25%;
+                h3{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen
+and (max-width: 412px){
+    .footer{
+        &__mpage{
+            @include display_flex_column_start;
+            padding: 5vh 15vw;
+            ul:nth-child(4){
+                width: 90%;
+                
+            }
+            ul:nth-child(4){
+                max-width: 90%;
+            }
+            &--logo{
+                display: flex;
+                i{
+                    width: 1.8em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 412px)
+and (max-width: 768px){
+    .footer{
+        &__mpage{
+            @include display_flex_column_start;
+            padding: 5vh 15vw;
+            ul:nth-child(4){
+                width: 90%;
+                
+            }
+            ul:nth-child(4){
+                max-width: 90%;
+            }
+            &--logo{
+                display: flex;
+                i{
+                    width: 1.8em;
+                }
+            }
+        }
+    }
+}

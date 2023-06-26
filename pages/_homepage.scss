@@ -176,7 +176,7 @@
 
     &__div{
         @include display_flex_row;
-        gap: 6em;
+        gap: 5vw;
 
 
         article{
@@ -588,6 +588,7 @@
     min-height: 50vh;
     @include display_flex_column;
     gap: 2em;
+    text-align: center;
     
     .line{
         display: block;
@@ -600,10 +601,248 @@
         
     }
 
+    p{
+        padding-bottom: 25px;
+    }
+
     button{
         background-color: $red;
         padding: 15px 45px;
         border: none;
         border-radius: 50px;
+    }
+}
+
+@media only screen
+and (max-width: 412px){
+    .s1{
+        @include display_flex_column;
+        text-align: center;
+        min-height: 100px;
+        height: 450px;
+        &__div2{
+            display: none;
+        }
+        h1{
+            font-size: 10vw;
+        }
+        p{
+            font-size: 0.8em;
+        }
+        p::before{
+            display: none;
+        }
+    }
+    .s2{
+        &__article.deux{
+            @include display_flex_column; 
+            }
+        &__article.trois{
+            @include display_flex_column_reverse; 
+            }
+        h2{
+            font-size: 2em;
+            }
+        h3{
+            font-size: 1.5em;
+            }
+        &__article.un{
+            @include display_flex_column_reverse; 
+            }
+            figure{
+                width: 90vw;
+                height: 20vh;
+            }
+            &__article--div{
+                width: 90vw;
+                height: 40vh;
+                padding: 2em 1em;
+            }
+        }
+        .s3{
+            h2{
+                font-size: 2em;
+            }
+            &__div{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            article{
+                padding-top: 1em;
+                h3{
+                    font-size: 1.5em;
+                }
+                i{
+                    @include display_flex_row;
+                    width: 2em;
+                    aspect-ratio: 1 / 1;
+                    background-color: $dark-background;
+                    font-size: 3em;
+                    border: 2px solid rgba($color: #ffffff, $alpha: 0.1);
+                    border-radius: 100px;
+                    color: rgba($color: #fff, $alpha: 1);
+                    z-index: 100;
+                    position: relative;
+                }
+                .intline{
+                    display: block;
+                    background-color: rgba($color: #ffffff, $alpha: 0.1);
+                    width: 10em;
+                    height: 2px;
+                    rotate: 120deg;
+                    z-index: 0;
+                    position: relative;
+                    bottom: 2.7em;
+                }
+            }
+        }
+        .s4{
+            min-height: 5vh;
+            padding: 5vh 10vw;
+            &__bpage{
+                display: none;
+            }
+            &__container{
+                &--article.un{
+                    display: none;
+                }
+            }
+            h2{
+                font-size: 2em;
+            }
+        }
+}
+
+@media only screen 
+and (min-width: 412px)
+and (max-width: 768px){
+    .s1{
+        @include display_flex_column;
+        text-align: center;
+        min-height: 100px;
+        height: 650px;
+        &__div2{
+            display: none;
+        }
+        h1{
+            font-size: 10vw;
+        }
+    }
+    .s2{
+        &__article.deux{
+            @include display_flex_column; 
+            }
+        &__article.trois{
+            @include display_flex_column_reverse; 
+            }
+        h2{
+            font-size: 2em;
+            }
+        h3{
+            font-size: 1.5em;
+            }
+        &__article.un{
+            @include display_flex_column_reverse; 
+            }
+            figure{
+                width: 80vw;
+                height: 40vh;
+            }
+            &__article--div{
+                width: 80vw;
+                padding: 2em 2em;
+                height: 38vh;
+            }
+        }
+    .s3{
+        h2{
+            font-size: 2.5em;
+        }
+        &__div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1200px){
+.s1{
+    @include display_flex_column;
+    text-align: center;
+    
+    &__div2{
+        display: none;
+    }
+    h1{
+        font-size: 10vw;
+        }
+    }
+.s2{
+    &__article.deux{
+        @include display_flex_column; 
+        }
+    &__article.trois{
+        @include display_flex_column_reverse; 
+        }
+    h2{
+        font-size: 2em;
+        }
+    &__article.un{
+        @include display_flex_column_reverse; 
+        }
+        figure{
+            width: 80vw;
+            height: 40vh;
+        }
+        &__article--div{
+            width: 80vw;
+        }
+    }
+    .s3{
+        min-height: 40vh;
+        h2{
+            font-size: 2.5em;
+        }
+        &__div{
+            gap: 2vw;
+            article{
+                min-width: 15em;
+                min-height: 320px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                p{
+                    font-size: 1em;
+                }
+                h3{
+                    font-size: 1.5em;
+                }
+                i{
+                    @include display_flex_row;
+                    width: 2em;
+                    aspect-ratio: 1 / 1;
+                    background-color: $dark-background;
+                    font-size: 3em;
+                    border: 2px solid rgba($color: #ffffff, $alpha: 0.1);
+                    border-radius: 100px;
+                    color: rgba($color: #fff, $alpha: 1);
+                    z-index: 100;
+                    position: relative;
+                }
+                .intline{
+                    display: block;
+                    background-color: rgba($color: #ffffff, $alpha: 0.1);
+                    width: 10em;
+                    height: 2px;
+                    rotate: 120deg;
+                    z-index: 0;
+                    position: relative;
+                    bottom: 2.7em;
+                }
+            }
+        }
     }
 }

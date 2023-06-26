@@ -3,6 +3,6 @@
 @import "pages/contact.scss";
 @import "pages/rooms.scss";
 @import "pages/room.scss"; // attention: c le fichier de la page room seule
-@use "../layouts/navbar.scss";
-@use "../pages/about.scss";
-@use "../layouts/footer.scss";
+@import "../layouts/navbar.scss";
+@import "../pages/about.scss";
+@import "../layouts/footer.scss";

@@ -1007,16 +1007,63 @@ footer a {
   }
   .s4 {
     min-height: 5vh;
-    padding: 5vh 10vw;
+    padding: 2vh 10vw;
   }
   .s4__bpage {
     display: none;
+  }
+  .s4__container {
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .s4__container--article.un {
     display: none;
   }
   .s4 h2 {
     font-size: 2em;
+  }
+  .s5 { /** ICI NICO TE PERD PAS MON REUF**/
+    height: 155vh;
+    padding: 5vh 3vw 5vh;
+  }
+  .s5 a {
+    padding: 1vh 0 2vh;
+  }
+  .s5 p {
+    font-size: 0.8em;
+  }
+  .s5 h2 {
+    font-size: 2em;
+  }
+  .s5__article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    gap: 15em;
+  }
+  .s5__article--author {
+    position: relative;
+    right: 100px;
+    bottom: 60px;
+  }
+  .s5__article--line {
+    position: relative;
+    left: 15px;
+  }
+  .s5__article--figure1 {
+    width: 90vw;
+  }
+  .s5__article--figure2 {
+    width: 90vw;
+  }
+  .s5__article--figure3 {
+    width: 90vw;
+  }
+  .s5__article h3 {
+    padding: 20px 15px 15px;
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 412px) and (max-width: 768px) {
@@ -1074,6 +1121,16 @@ footer a {
   .s3__div {
     display: flex;
     flex-wrap: wrap;
+  }
+  .s4 {
+    padding: 2vh 5vw;
+    min-height: 50vh;
+  }
+  .s4 h2 {
+    font-size: 2em;
+  }
+  .s4__bpage {
+    padding-bottom: 25px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1165,6 +1222,9 @@ footer a {
     z-index: 0;
     position: relative;
     bottom: 2.7em;
+  }
+  .s4 {
+    padding: 2vh 5vw;
   }
 }
 

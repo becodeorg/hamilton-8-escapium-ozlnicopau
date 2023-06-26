@@ -698,17 +698,64 @@ and (max-width: 412px){
         }
         .s4{
             min-height: 5vh;
-            padding: 5vh 10vw;
+            
+            padding: 2vh 10vw;
             &__bpage{
                 display: none;
             }
             &__container{
+                gap: 1vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 &--article.un{
                     display: none;
                 }
             }
             h2{
                 font-size: 2em;
+            }
+        }
+        .s5{/** ICI NICO TE PERD PAS MON REUF**/
+            height: 155vh;
+            padding: 5vh 3vw 5vh ;
+            a{
+                padding: 1vh 0 2vh;
+            }
+            p{
+                font-size: 0.8em;
+            }
+            h2{
+                font-size: 2em;
+            }
+            &__article{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90vw;
+                gap: 15em;
+                &--author{
+                    position: relative;
+                    right: 100px;
+                    bottom: 60px;
+                    
+                }
+                &--line{
+                    position: relative;
+                    left: 15px;
+                }
+                &--figure1{
+                    width: 90vw;
+                }
+                &--figure2{
+                    width: 90vw;
+                }
+                &--figure3{
+                    width: 90vw;
+                }
+                h3{
+                    padding: 20px 15px 15px;
+                    font-size: 1.5em;
+                }
             }
         }
 }
@@ -761,6 +808,16 @@ and (max-width: 768px){
         &__div{
             display: flex;
             flex-wrap: wrap;
+        }
+    }
+    .s4{
+        padding: 2vh 5vw;
+        min-height: 50vh;
+        h2{
+            font-size: 2em;
+        }
+        &__bpage{
+            padding-bottom: 25px;
         }
     }
 }
@@ -844,5 +901,8 @@ and (max-width: 1200px){
                 }
             }
         }
+    }
+    .s4{
+        padding: 2vh 5vw;
     }
 }

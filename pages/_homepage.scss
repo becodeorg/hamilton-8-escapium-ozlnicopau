@@ -424,7 +424,6 @@
         i{
             color: $red;
             font-size: 50px;
-            
         }
     }
 }
@@ -718,7 +717,7 @@ and (max-width: 412px){
         }
         .s5{/** ICI NICO TE PERD PAS MON REUF**/
             height: 155vh;
-            padding: 5vh 3vw 5vh ;
+            padding: 5vh 3vw 5vh;
             a{
                 padding: 1vh 0 2vh;
             }
@@ -758,6 +757,65 @@ and (max-width: 412px){
                 }
             }
         }
+        .s6{
+            &__article{
+                position: relative;
+                left: 8vw;
+                
+                li{
+                    line-height: 7em;
+                }
+                h3{
+                    display: none;
+                }
+            }
+        }
+        button{
+            margin-top: 50px;
+        }
+        
+        .s7{    
+            button{
+                margin-bottom: 0;
+            }
+            h2{
+            font-size: 2em;
+        }
+        &__article{
+            max-height: 500vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            padding-bottom: 25px;
+
+            figure{
+                width: 150px;
+                height: 150px;
+                img{
+                    width: 150px;
+                }
+                
+            }
+            
+        }
+    }
+    .s8{
+        .articleTwo {
+            padding: 2em 5vw 2em 2em;
+            &__title{
+                font-size: 1.5em;
+            }
+            
+            &__button {
+                width: 13em;
+                padding: 15px 10px;
+                margin: 0;
+                font-size: 0.8em;
+            }
+        }
+    }
 }
 
 @media only screen 
@@ -798,7 +856,7 @@ and (max-width: 768px){
             &__article--div{
                 width: 80vw;
                 padding: 2em 2em;
-                height: 38vh;
+                height: 40vh;
             }
         }
     .s3{
@@ -818,6 +876,103 @@ and (max-width: 768px){
         }
         &__bpage{
             padding-bottom: 25px;
+        }
+    }
+    .s5{
+        padding: 5vh 3vw 5vh;
+        min-height: 60vh;
+        &__article{
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            &--author{
+                position: relative;
+                right: 7vw;
+                bottom: 60px;
+                
+            }
+            article{
+                width: 47%;
+                height: 55vh;
+            }
+            &--line{
+                position: relative;
+                left: 15px;
+            }
+            &--figure1{
+                width: 40vw;
+            }
+            &--figure2{
+                width: 40vw;
+            }
+            &--figure3{
+                width: 40vw;
+            }
+            h3{
+                padding: 20px 15px 15px;
+                font-size: 1.5em;
+            }
+        }
+        
+    }
+    .s6{
+        &__article{
+            position: relative;
+            left: 30vw;
+            right: 30vw;
+            li{
+                line-height: 7em;
+            }
+            h3{
+                display: none;
+            }
+        }
+    }
+    .s7{
+        button{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+          h2{
+            font-size: 2.5em;
+          }
+        
+        &__article{
+            max-height: 500vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            padding-bottom: 25px;
+
+            figure{
+                width: 250px;
+                height: 250px;
+                img{
+                    width: 250px;
+                }
+                
+            }
+            
+        }
+    }
+    .s8{
+        .articleTwo {
+            padding: 2em 5vw 2em 2em;
+            &__title{
+                font-size: 1.5em;
+            }
+            
+            &__button {
+                width: 13em;
+                padding: 15px 10px;
+                margin: 0;
+                font-size: 0.8em;
+            }
         }
     }
 }
@@ -905,4 +1060,24 @@ and (max-width: 1200px){
     .s4{
         padding: 2vh 5vw;
     }
+    .s5{
+        padding: 5vh 3vw 5vh;
+        min-height: 100vh;
+        &__article{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            article{
+                height: 50vh;
+            }
+        }
+    }
+    .s6{
+        &__article{
+            position: relative;
+            right: 150px;
+        }
+    }
+    
 }

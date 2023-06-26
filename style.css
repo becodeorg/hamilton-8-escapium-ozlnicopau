@@ -1512,6 +1512,18 @@ nav ul li a:hover {
   nav {
     display: none;
   }
+  nav div {
+    flex-direction: column;
+    padding: 20px;
+  }
+  nav div ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav div ul li {
+    border-bottom: 1px solid #777;
+    border-top: 1px solid #777;
+  }
   nav .sidebar {
     flex-direction: column;
     width: 200px;
@@ -1538,18 +1550,6 @@ nav ul li a:hover {
   }
   nav .sidebar .active {
     left: 200px; /* Afficher la sidebar */
-  }
-  div {
-    flex-direction: column;
-    padding: 20px;
-  }
-  div ul {
-    flex-direction: column;
-    padding: 0;
-  }
-  div ul li {
-    border-bottom: 1px solid #777;
-    border-top: 1px solid #777;
   }
 }
 .button_booknow {

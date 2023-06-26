@@ -2,8 +2,15 @@
 @import url(/layouts/footer.css);
 
 header {
-  background-image: url(../ressources/gallery/slide-1.jpg);
-  background-size: cover;
+  background: rgba(27, 27, 27, 0);
+  background: linear-gradient(
+      180deg,
+      rgba(27, 27, 27, 0) 0%,
+      rgba(27, 27, 27, 1) 90%,
+      rgba(27, 27, 27, 1) 100%
+    ),
+    url(../ressources/gallery/slide-1.jpg);
+  background-size: contain;
   height: 50vh;
   filter: contrast(125%);
 
@@ -42,6 +49,7 @@ h2 {
     padding-right: 100px;
     justify-content: space-between;
     padding-bottom: 100px;
+    flex-wrap: wrap;
 
     .howtoplay_container {
       display: flex;
@@ -81,6 +89,7 @@ h2 {
     padding-right: 50px;
     justify-content: space-between;
     padding-bottom: 100px;
+    flex-wrap: wrap;
   }
 }
 
@@ -93,6 +102,7 @@ h2 {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
+    flex-wrap: wrap;
 
     .ourteam_flexbox {
       display: flex;
@@ -137,6 +147,7 @@ h2 {
     padding-left: 250px;
     padding-right: 250px;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .testimonials_containers {
       display: flex;
@@ -144,7 +155,6 @@ h2 {
       width: 310px;
       justify-content: space-between;
       align-items: center;
-      height: 200px;
 
       .testimonials_text {
         text-align: center;
@@ -166,23 +176,22 @@ h2 {
 
   .testimonials_navigation {
     display: flex;
-    height: 150px;
+    height: 100px;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 
-    img {
-      color: red;
-      height: 50px;
-      width: 50px;
+    i {
+      color: white;
     }
 
     .testimonials_oblique {
-      height: 2px;
-      background-color: #717171;
-      transform: rotate(-45deg);
-      position: absolute;
-      top: 50%;
-      left: 0;
-      z-index: 0;
-      content: " ";
+      height: 5px;
+      color: #717171;
+      font-size: 50px;
+      font-weight: 100;
+      padding-bottom: 50px;
     }
   }
 }
@@ -201,7 +210,7 @@ h2 {
   }
 
   div {
-    width: auto;
+    width: 500px;
     margin: auto;
 
     .panel {
@@ -347,9 +356,10 @@ h2 {
 
   .faq {
     div {
+      width: 500px;
+
       .accordion {
         font-size: 16px;
-        width: auto;
       }
 
       .panel {
@@ -410,6 +420,12 @@ h2 {
         padding-left: 100px;
         padding-right: 100px;
       }
+    }
+  }
+
+  .faq {
+    div {
+      width: 500px;
     }
   }
 }

@@ -2,8 +2,9 @@
 @import url(/layouts/navbar.css);
 @import url(/layouts/footer.css);
 header {
-  background-image: url(../ressources/gallery/slide-1.jpg);
-  background-size: cover;
+  background: rgba(27, 27, 27, 0);
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgb(27, 27, 27) 90%, rgb(27, 27, 27) 100%), url(../ressources/gallery/slide-1.jpg);
+  background-size: contain;
   height: 50vh;
   filter: contrast(125%);
 }
@@ -38,6 +39,7 @@ h2 {
   padding-right: 100px;
   justify-content: space-between;
   padding-bottom: 100px;
+  flex-wrap: wrap;
 }
 .howtoplay .howtoplay_flexbox .howtoplay_container {
   display: flex;
@@ -73,6 +75,7 @@ h2 {
   padding-right: 50px;
   justify-content: space-between;
   padding-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .ourteam {
@@ -84,6 +87,7 @@ h2 {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 100px;
+  flex-wrap: wrap;
 }
 .ourteam .ourteam_container .ourteam_flexbox {
   display: flex;
@@ -123,6 +127,7 @@ h2 {
   padding-left: 250px;
   padding-right: 250px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .what_people_say .testimonials_flexbox .testimonials_containers {
   display: flex;
@@ -130,24 +135,14 @@ h2 {
   width: 310px;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
 }
-.what_people_say
-  .testimonials_flexbox
-  .testimonials_containers
-  .testimonials_text {
+.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_text {
   text-align: center;
 }
-.what_people_say
-  .testimonials_flexbox
-  .testimonials_containers
-  .testimonials_avatar {
+.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_avatar {
   width: 50px;
 }
-.what_people_say
-  .testimonials_flexbox
-  .testimonials_containers
-  .testimonials_name {
+.what_people_say .testimonials_flexbox .testimonials_containers .testimonials_name {
   font-size: 11px;
 }
 .what_people_say .testimonials_flexbox p {
@@ -155,22 +150,21 @@ h2 {
 }
 .what_people_say .testimonials_navigation {
   display: flex;
-  height: 150px;
+  height: 100px;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
-.what_people_say .testimonials_navigation img {
-  color: red;
-  height: 50px;
-  width: 50px;
+.what_people_say .testimonials_navigation i {
+  color: white;
 }
 .what_people_say .testimonials_navigation .testimonials_oblique {
-  height: 2px;
-  background-color: #717171;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 0;
-  content: " ";
+  height: 5px;
+  color: #717171;
+  font-size: 50px;
+  font-weight: 100;
+  padding-bottom: 50px;
 }
 
 .faq {
@@ -186,7 +180,7 @@ h2 {
   text-align: center;
 }
 .faq div {
-  width: auto;
+  width: 500px;
   margin: auto;
 }
 .faq div .panel {
@@ -291,15 +285,14 @@ h2 {
   .what_people_say .testimonials_flexbox .testimonials_containers {
     width: 250px;
   }
-  .what_people_say
-    .testimonials_flexbox
-    .testimonials_containers
-    .testimonials_text {
+  .what_people_say .testimonials_flexbox .testimonials_containers .testimonials_text {
     font-size: 14px;
+  }
+  .faq div {
+    width: 500px;
   }
   .faq div .accordion {
     font-size: 16px;
-    width: auto;
   }
   .faq div .panel {
     width: 270px;
@@ -341,4 +334,9 @@ h2 {
     padding-left: 100px;
     padding-right: 100px;
   }
-} /*# sourceMappingURL=about.css.map */
+}
+@media only screen and (max-width: 412px) {
+  .faq div {
+    width: 500px;
+  }
+}/*# sourceMappingURL=about.css.map */

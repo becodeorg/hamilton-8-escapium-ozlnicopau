@@ -1,9 +1,8 @@
-@import 'layouts/footer';
-@import 'layouts/form';
-@import 'pages/contact.scss';
-@import 'pages/rooms.scss';
-@import 'pages/room.scss'; // attention: c le fichier de la page room seule 
-@import 'base/reset';
-@import 'utils/mixins';
-@import 'pages/homepage';
-@import 'layouts/navbar.scss';
+@import "layouts/footer";
+@import "layouts/form";
+@import "pages/contact.scss";
+@import "pages/rooms.scss";
+@import "pages/room.scss"; // attention: c le fichier de la page room seule
+@use "../layouts/navbar.scss";
+@use "../pages/about.scss";
+@use "../layouts/footer.scss";

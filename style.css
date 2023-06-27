@@ -1591,7 +1591,7 @@ nav ul li a:hover {
 
 header {
   background: rgba(27, 27, 27, 0);
-  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgb(27, 27, 27) 90%, rgb(27, 27, 27) 100%), url(../ressources/gallery/slide-1.jpg);
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgb(27, 27, 27) 90%, rgb(27, 27, 27) 100%), url(../resources/images/gallery/slide-1.jpg);
   background-size: contain;
   filter: contrast(125%);
 }
@@ -1637,7 +1637,7 @@ h2 {
   justify-content: space-between;
 }
 .howtoplay .howtoplay_flexbox .howtoplay_container .howtoplay_icon {
-  width: 55px;
+  width: 120px;
   border: 1px solid #717171;
   border-radius: 100px;
   padding: 30px;
@@ -1801,137 +1801,129 @@ h2 {
   padding: 10px;
   color: #777;
   float: left;
-}
-.faq .accordion::before header {
-  background: rgba(27, 27, 27, 0);
-  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgb(27, 27, 27) 90%, rgb(27, 27, 27) 100%), url(../ressources/gallery/slide-1.jpg);
-  background-size: contain;
-  height: 50vh;
-  filter: contrast(125%);
   margin-left: 5px;
   background-color: #eee;
   border: 1px solid #eee;
   border-radius: 50px;
   margin-right: 50px;
 }
-.faq .accordion::before .active::before {
+.faq .accordion .active::before {
   content: "−";
 }
+
 @media only screen and (max-width: 412px) {
-  .faq .navbar {
+  .navbar {
     display: none;
   }
-  .faq header h1 {
+  header h1 {
     font-size: 32px;
   }
-  .faq h2 {
+  h2 {
     font-size: 21px;
   }
-  .faq .howtoplay .howtoplay_flexbox {
+  .howtoplay .howtoplay_flexbox {
     padding-left: 20px;
     padding-right: 20px;
     flex-direction: column;
   }
-  .faq .howtoplay .howtoplay_flexbox .howtoplay_container {
+  .howtoplay .howtoplay_flexbox .howtoplay_container {
     width: 200px;
     height: 250px;
   }
-  .faq .howtoplay .howtoplay_flexbox .howtoplay_container .howtoplay_icon {
+  .howtoplay .howtoplay_flexbox .howtoplay_container .howtoplay_icon {
     width: 35px;
     padding: 20px;
   }
-  .faq .howtoplay h3 {
+  .howtoplay h3 {
     font-size: 19px;
   }
-  .faq .howtoplay p {
+  .howtoplay p {
     font-size: 14px;
   }
-  .faq .ourteam .ourteam_container {
+  .ourteam .ourteam_container {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .faq .ourteam .ourteam_container .ourteam_flexbox .ourteam_img {
+  .ourteam .ourteam_container .ourteam_flexbox .ourteam_img {
     width: 200px;
   }
-  .faq .ourteam .ourteam_container .ourteam_flexbox .ourteam_member_name {
+  .ourteam .ourteam_container .ourteam_flexbox .ourteam_member_name {
     font-size: 12px;
   }
-  .faq .ourteam .ourteam_container .ourteam_flexbox .ourteam_job_title {
+  .ourteam .ourteam_container .ourteam_flexbox .ourteam_job_title {
     font-size: 8px;
   }
-  .faq .certificates .certificates_flexbox {
+  .certificates .certificates_flexbox {
     flex-direction: column;
   }
-  .faq .certificates .certificates_flexbox img {
+  .certificates .certificates_flexbox img {
     margin-bottom: 50px;
   }
-  .faq .ourteam .ourteam_container {
+  .ourteam .ourteam_container {
     flex-direction: column;
   }
-  .faq .ourteam .ourteam_flexbox {
+  .ourteam .ourteam_flexbox {
     flex-direction: column;
   }
-  .faq .what_people_say .testimonials_flexbox {
+  .what_people_say .testimonials_flexbox {
     flex-direction: column;
     padding-left: 100px;
   }
-  .faq .what_people_say .testimonials_flexbox .testimonials_containers {
+  .what_people_say .testimonials_flexbox .testimonials_containers {
     width: 250px;
   }
-  .faq .what_people_say .testimonials_flexbox .testimonials_containers .testimonials_text {
+  .what_people_say .testimonials_flexbox .testimonials_containers .testimonials_text {
     font-size: 14px;
   }
-  .faq .faq div {
+  .faq div {
     width: 500px;
   }
-  .faq .faq div .accordion {
+  .faq div .accordion {
     font-size: 16px;
   }
-  .faq .faq div .panel {
+  .faq div .panel {
     width: 270px;
   }
-  .faq .faq div .panel p {
+  .faq div .panel p {
     font-size: 12px;
     width: 270px;
     margin-left: 30px;
   }
 }
 @media only screen and (max-width: 412px) and (max-width: 768px) and (min-width: 412px) {
-  .faq header h1 {
+  header h1 {
     font-size: 32px;
   }
-  .faq h2 {
+  h2 {
     font-size: 21px;
   }
-  .faq .howtoplay .howtoplay_flexbox {
+  .howtoplay .howtoplay_flexbox {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .faq .howtoplay .howtoplay_container {
+  .howtoplay .howtoplay_container {
     width: 250px;
     height: 280px;
   }
-  .faq .howtoplay .howtoplay_container .howtoplay_icon {
+  .howtoplay .howtoplay_container .howtoplay_icon {
     width: 45px;
     padding: 25px;
   }
-  .faq .ourteam .ourteam_container {
+  .ourteam .ourteam_container {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .faq .ourteam .ourteam_container .ourteam_flexbox .ourteam_img {
+  .ourteam .ourteam_container .ourteam_flexbox .ourteam_img {
     width: 250px;
   }
-  .faq .what_people_say .testimonials_flexbox {
+  .what_people_say .testimonials_flexbox {
     flex-direction: column;
     padding-left: 100px;
     padding-right: 100px;
   }
 }
 @media only screen and (max-width: 412px) {
-  .faq .faq div {
+  .faq div {
     width: 500px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

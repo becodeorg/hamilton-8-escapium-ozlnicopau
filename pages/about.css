@@ -3,9 +3,8 @@
 @import url(/layouts/footer.css);
 header {
   background: rgba(27, 27, 27, 0);
-  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgb(27, 27, 27) 90%, rgb(27, 27, 27) 100%), url(../ressources/gallery/slide-1.jpg);
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgb(27, 27, 27) 90%, rgb(27, 27, 27) 100%), url(../resources/images/gallery/slide-1.jpg);
   background-size: contain;
-  height: 50vh;
   filter: contrast(125%);
 }
 header h1 {
@@ -50,7 +49,7 @@ h2 {
   justify-content: space-between;
 }
 .howtoplay .howtoplay_flexbox .howtoplay_container .howtoplay_icon {
-  width: 55px;
+  width: 120px;
   border: 1px solid #717171;
   border-radius: 100px;
   padding: 30px;
